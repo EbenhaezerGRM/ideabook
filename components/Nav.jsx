@@ -108,13 +108,13 @@ const Nav = () => {
                   Share Idea
                 </Link>
 
-                {/* <Link
-                  href='/liked'
+                <Link
+                  href='/loved'
                   className='dropdown_link'
                   onClick={() => {setToggleDropdown(false)}}
                   >
-                  Saved
-                </Link> */}
+                  Loved
+                </Link>
 
                 <button
                   type='button'
