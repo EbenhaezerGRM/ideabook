@@ -11,7 +11,10 @@ const nextConfig = {
       config.experiments = {
         ...config.experiments,
         topLevelAwait: true,
-      }
+      },
+      config.infrastructureLogging = {
+        level: "error",
+    }
       return config
     }
   }
