@@ -24,6 +24,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
                 <textarea
                     className="form_textarea"
                     placeholder="Write your idea here"
+                    id="idea"
                     required
                     value={post.idea}
                     onChange={(e) => { setPost({ ...post, idea: e.target.value })}}
@@ -33,7 +34,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
 
                 <label>
                     <span className="font-satoshi font-semibold text-base text-gray-700">
-                        Tag {""}
+                        Tag {" "}
                         <span className="font-normal">
                             (#technology, #programming, #project, etc)
                         </span>
@@ -42,6 +43,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
                         className="form_input"
                         type="text"
                         placeholder="#tag"
+                        id="tag"
                         required
                         value={post.tag}
                         onChange={(e) => {setPost({ ...post, tag: e.target.value })}}
