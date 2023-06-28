@@ -79,7 +79,7 @@ const IdeaCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
         )}
       </div>
 
-      <p className="my-4 font-satoshi text-sm text-gray-900">{post.idea}</p>
+      <p className="my-4 font-satoshi text-sm text-gray-900 break-words">{post.idea}</p>
       <p className="font-inter text-sm blue_gradient cursor-pointer" onClick={() => handleTagClick && handleTagClick(post.tag)}>
         {post.tag}
       </p>
