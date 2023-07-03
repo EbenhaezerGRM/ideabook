@@ -110,11 +110,11 @@
 }
 
 .dropdown {
-  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-violet-100 min-w-[200px] flex flex-col gap-3 justify-start items-start;
 }
 
 .dropdown_link {
-  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
+  @apply text-sm font-inter text-gray-700 hover:bg-violet-200 rounded md:bg-transparent block py-2 pl-3 pr-4 font-medium;
 }
 
 /* IdeaCard Component */

@@ -18,12 +18,10 @@ const userProfile = ({params}) => {
     if (params?.id) fetchPosts()
   }, [params.id])
 
-  const formattedName = userName.endsWith('s') ? `${userName}\'` : `${userName}\'s`
-
   return (
     <Profile
       name={userName}
-      desc={`Welcome to ${formattedName} profile page. Explore ${formattedName} idea(s) and be inspired by them`}
+      desc={`Welcome to ${userName}'s profile page. Explore ${userName}'s idea and be inspired by them`}
       data={userPosts}
     />
   )

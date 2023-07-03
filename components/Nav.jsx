@@ -35,6 +35,16 @@ const Nav = () => {
     <div className='sm:flex hidden'>
           {session?.user ? (
             <div className='flex gap-3 md:gap-5'>
+                <Link href='/saved' className='flex gap-2 flex-center'>
+                  <Image
+                    src='/assets/icons/love.svg'
+                    alt='like'
+                    width={35}
+                    height={35}
+                    className='object-contain'
+                  />
+              </Link>
+
               <Link href='/share-idea' className='black_btn'>
                 Share Idea
               </Link>
@@ -109,11 +119,11 @@ const Nav = () => {
                 </Link>
 
                 <Link
-                  href='/loved'
+                  href='/saved'
                   className='dropdown_link'
                   onClick={() => {setToggleDropdown(false)}}
                   >
-                  Loved
+                  Saved Idea
                 </Link>
 
                 <button

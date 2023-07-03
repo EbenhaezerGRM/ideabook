@@ -54,12 +54,11 @@ const IdeaCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
               : "/assets/icons/copy.svg"
           }
             alt={copied === post.idea ? "tick_icon" : "copy_icon"}
-            width={20}
-            height={20}
+            width={15}
+            height={15}
             />
         </div>
         
-        {/* Loved button on progress */}
         {session?.user ? (
         <div className="copy_btn" onClick={(handleLoved)}>
         <Image
@@ -69,8 +68,8 @@ const IdeaCard = ({post, handleTagClick, handleEdit, handleDelete}) => {
               : "/assets/icons/love.svg"
           }
             alt={copied === post.idea ? "loved_icon" : "love_icon"}
-            width={20}
-            height={20}
+            width={15}
+            height={15}
             />
         </div>
         ) : (
